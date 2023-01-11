@@ -1,0 +1,52 @@
+.outer {
+    margin: 6vh;
+    margin-left: 10vh;
+    background-color: white;
+    height: 50vh;
+    width: 50vh;
+    padding: 10vh;
+    padding-left: 20vh;
+
+}
+
+.user {
+    width: 80%;
+
+}
+
+.pass {
+    width: 80%;
+}
+
+.btn {
+    display: flex;
+    margin: 5vh;
+
+}
+
+button {
+    width: 15vh;
+    height: 5vh;
+    background-color: #f48915;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.containerImg {
+    display: flex;
+    border-radius: 150px;
+    align-items: center;
+    background-color: white;
+    width: 115px;
+    height: 115px;
+
+}
+
+.profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 130px;
+}

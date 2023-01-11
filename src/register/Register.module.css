@@ -1,0 +1,69 @@
+/* body {
+    background-color: #656565;
+} */
+
+.outer {
+    margin: 6vh;
+    margin-left: 10vh;
+    background-color: white;
+    height: 50vh;
+    width: 60vh;
+    padding: 10vh;
+    padding-left: 20vh;
+
+}
+
+.email {
+    width: 80%;
+}
+
+.user {
+    width: 80%;
+
+}
+
+.pass {
+    width: 80%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+
+}
+
+button {
+    width: 15vh;
+    height: 5vh;
+    background-color: #f48915;
+
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerImg {
+
+    display: flex;
+    border-radius: 150px;
+    align-items: center;
+    background-color: white;
+    width: 115px;
+    height: 115px;
+
+
+}
+
+.profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 130px;
+}
+
+/* ::-webkit-scrollbar{
+    display: none;
+  } */
