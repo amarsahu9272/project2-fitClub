@@ -26,8 +26,7 @@ function Register() {
 
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      let userList =
-        JSON.parse(localStorage.getItem("registeredUserList")) || [];
+      let userList = JSON.parse(localStorage.getItem("registeredUserList")) || [];
       userList.push(formValues);
       localStorage.setItem("registeredUserList", JSON.stringify(userList));
       navigate("../login/Login");
@@ -38,12 +37,12 @@ function Register() {
     const errors = {};
 
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    var inValid = /\s/;
-    if (inValid.test(values.name)) {
+    var spaceRegx = /\s/;
+    if (spaceRegx.test(values.name)) {
       errors.name = "*username name wouldn't have whiteSpace";
-    } else if (inValid.test(values.email)) {
+    } else if (spaceRegx.test(values.email)) {
       errors.email = "*email wouldn't have whiteSpace";
-    } else if (inValid.test(values.password)) {
+    } else if (spaceRegx.test(values.password)) {
       errors.password = "*password wouldn't have whiteSpace";
     }
 
@@ -69,8 +68,8 @@ function Register() {
 
   return (
     <>
-    {/* <Header/> */}
-      <form onSubmit={handleSubmit}>
+      {/* <Header/> */}
+      <form onSubmit={handleSubmit} className={style.emailContainer}>
         <div className={style.outer}>
           {Object.keys(formErrors).length === 0 && isSubmit ? (
             <div style={{ color: "green" }}>Registered successfully</div>

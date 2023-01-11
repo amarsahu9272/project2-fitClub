@@ -32,6 +32,7 @@ function LogIn() {
     } else {
       alert("wrong Credentials");
     }
+    navigate('/Home')
   };
 
   useEffect(() => {
@@ -96,10 +97,10 @@ function LogIn() {
           />
           <p style={{ color: "red" }}>{formErrors.password}</p>
           <div className={style.btn}>
-            <p>
+            <p style={{color:"white"}}>
               Don't have an account?
               <br />
-              <Link to="/register/Register">Register</Link>
+              <Link to="/register/Register" style={{color:"blue"}}>Register</Link>
             </p>
             <button>Login</button>
           </div>

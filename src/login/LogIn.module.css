@@ -1,7 +1,7 @@
 .outer {
     margin: 6vh;
     margin-left: 10vh;
-    background-color: white;
+    /* background-color: white; */
     height: 50vh;
     width: 50vh;
     padding: 10vh;
@@ -11,18 +11,27 @@
 
 .user {
     width: 80%;
-
+    background-color: transparent;
+    border: 1;
+    outline:none;
+    /* color: var(--lightgrayz); */
+    color: #f48915;
 }
 
 .pass {
     width: 80%;
+    background-color: transparent;
+    border: 1;
+    outline:none;
+    /* color: var(--lightgrayz); */
+    color: #f48915;
 }
-
+/* 
 .btn {
     display: flex;
     margin: 5vh;
-
-}
+    justify-content: space-between;
+} */
 
 button {
     width: 15vh;
@@ -39,7 +48,7 @@ button {
     display: flex;
     border-radius: 150px;
     align-items: center;
-    background-color: white;
+    /* background-color: white; */
     width: 115px;
     height: 115px;
 
@@ -50,3 +59,22 @@ button {
     width: 100px;
     border-radius: 130px;
 }
+
+/* .emailContainer {
+    display: flex;
+    gap: 3rem;
+    background-color: gray;
+    padding: 2rem;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgrayz)
+}
+
+button{
+    background-color: var(--orange);
+    color: var(--lightgray);
+} */

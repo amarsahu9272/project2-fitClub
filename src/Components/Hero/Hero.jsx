@@ -7,6 +7,7 @@ import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
+import { Link } from "react-router-dom";
 function Hero() {
   const transition = { type: "spring", duration: 3 };
   const mobile = window.innerWidth <= 768 ? true : false;
@@ -64,7 +65,8 @@ function Hero() {
         </div>
       </div>
       <div className="right-h">
-        <button className="btn">JOIN NOW</button>
+        {/* <button className="btn">JOIN NOW</button> */}
+        <Link to="/register/Register" className="btn">JOIN NOW</Link>
         <motion.div
           initial={{ right: "-rem" }}
           whileInView={{ right: "4rem" }}
