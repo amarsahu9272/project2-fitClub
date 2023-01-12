@@ -30,7 +30,7 @@ function Header() {
       ) : (
         <ul className="header-menu">
           <li>
-            <Rl to ='/Home' className="link">home</Rl>
+            <Rl to ='/Home' className="link">Home</Rl>
           </li>
           <li>
             <Link
