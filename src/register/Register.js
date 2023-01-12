@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from "./Register.module.css";
 import profile from "../profile.jpeg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import Header from "../Components/Header/Header";
 
 function Register() {
@@ -26,7 +26,8 @@ function Register() {
 
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      let userList = JSON.parse(localStorage.getItem("registeredUserList")) || [];
+      let userList =
+        JSON.parse(localStorage.getItem("registeredUserList")) || [];
       userList.push(formValues);
       localStorage.setItem("registeredUserList", JSON.stringify(userList));
       navigate("../login/Login");
@@ -68,8 +69,10 @@ function Register() {
 
   return (
     <>
-      {/* <Header/> */}
+      <div className={style.register}>
+              {/* <Header/> */}
       <form onSubmit={handleSubmit} className={style.emailContainer}>
+      {/* <Header/> */}
         <div className={style.outer}>
           {Object.keys(formErrors).length === 0 && isSubmit ? (
             <div style={{ color: "green" }}>Registered successfully</div>
@@ -109,11 +112,19 @@ function Register() {
             onChange={handleChange}
           />
           <p style={{ color: "red" }}>{formErrors.password}</p>
+
           <div className={style.btn}>
+          <p style={{color:"white"}}>
+              Already a Existing user ?
+              <br />
+              <Link to ='/login/LogIn' style={{color:"blue"}}>Log-in</Link>
+            </p>
             <button>Register</button>
           </div>
+
         </div>
       </form>
+      </div>
     </>
   );
 }

@@ -55,7 +55,7 @@ function Testimonials() {
         ? setSelected(tLength-1)
     :setSelected((prev)=>prev-1)
     }}
-    src={leftArrow}/>
+    src={leftArrow} alt=''/>
         <img 
         onClick={()=>{
             selected===tLength-1
@@ -63,7 +63,7 @@ function Testimonials() {
             :setSelected((prev)=>prev+1)
         }
         }
-        src={rightArrow}/>
+        src={rightArrow} alt=''/>
       </div>
       </div>
     </div>

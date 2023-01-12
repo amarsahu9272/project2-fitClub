@@ -4,6 +4,7 @@ import Logo from "../../assets/logo.png";
 import Bars from "../../assets/bars.png";
 import { Link } from "react-scroll";
 import { Link as Rl } from 'react-router-dom'
+// import App from "../../App";
 // import Home from "../../Home";
 
 function Header() {
@@ -30,7 +31,7 @@ function Header() {
       ) : (
         <ul className="header-menu">
           <li>
-            <Rl to ='/Home' className="link">Home</Rl>
+            <Rl to ='/App' className="link">Home</Rl>
           </li>
           <li>
             <Link

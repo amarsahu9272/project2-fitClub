@@ -1,0 +1,12 @@
+
+.activity{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.activity-c{
+    width: 12vw;
+    height: 12vh;
+    border: solid;
+}
