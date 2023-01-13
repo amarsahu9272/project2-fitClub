@@ -12,7 +12,7 @@ function Header() {
   const [menuOpened, setMenuOpened] = useState(false);
   return (
     <div className="header">
-      <img src={Logo} alt="" className="logo" />
+      <Rl to ='/App' className="link"><img src={Logo} alt="" className="logo" /></Rl>
       {menuOpened === false && mobile === true ? (
         <div
           style={{
@@ -63,7 +63,7 @@ function Header() {
             <Link
               onClick={() => setMenuOpened(false)}
               to="Testimonials"
-              span={true}
+              spy={true}
               smooth={true}
             >
               Testimonials

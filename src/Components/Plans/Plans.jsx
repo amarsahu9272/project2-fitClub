@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { plansData } from "../../data/plansData";
 import whiteTick from "../../assets/whiteTick.png";
 import "./Plans.css";
@@ -8,21 +8,21 @@ import { useNavigate } from "react-router";
 // import Activities from "../Activities/Activities";
 function Plans() {
   const navigate = useNavigate();
-  const [planValue, setPlan]= useState(0)
+  // const [planValue, setPlan]= useState(0)
   // const [planAtom, setPlanAtom] = useRecoilState(loginAtom);
 
   function subscribe(e) {
     if (prompt("want to subscribe")) {
       navigate("../Activities/Activities");
       // console.log(e.target.name)
-      setPlan(e.target.name)
+      // setPlan(e.target.name)
       // setPlanAtom(planValue)
      
     }
   }
 
   return (
-    <div className="plans-container" id="plans">
+    <div className="plans-container" id="Plans">
       <div className="blur plans-blur-1"></div>
       <div className="blur plans-blur-2"></div>
       <div className="programs-header" style={{ gap: "2rem" }}>
@@ -48,7 +48,7 @@ function Plans() {
               <span>see more benefits </span>
             </div>
             <button name={plansData[k].price} onClick={subscribe} className="btn" >
-              SUBSCRIBE{planValue}
+              SUBSCRIBE
             </button>
           </div>
         ))}

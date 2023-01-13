@@ -4,7 +4,7 @@ import{programsData} from '../../data/programsData'
 import RightArrow from '../../assets/rightArrow.png'
 function Program() {
   return (
-   <div className="Programs" id="programs">
+   <div className="Programs" id="Programs">
    <div className='programs_header'> 
    <span className='stroke-text'>Explore our</span>
     <span>Program</span>
